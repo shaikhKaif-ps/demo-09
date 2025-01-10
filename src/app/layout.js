@@ -1,6 +1,8 @@
 // Import from next/font/google using named import
 import { Barlow } from "next/font/google";
 import "./globals.css";
+import Footer from "./Components/Global/Footer";
+import Navbar from "./Components/Global/Navbar";
 
 // Initialize the Barlow font
 const barlow = Barlow({
@@ -17,7 +19,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={barlow.className}> {/* Use the barlow.className */}
+      <Navbar />
         {children}
+      <Footer />
       </body>
     </html>
   );

@@ -11,6 +11,15 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        scroll: "scrollText 3s linear infinite",
+      },
+      keyframes: {
+        scrollText: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-100%)" },
+        },
+      },
     },
   },
   plugins: [],

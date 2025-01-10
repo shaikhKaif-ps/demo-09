@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html,body{
+    background-color: #f8f7ff;
+}
+
+.SecondColor{
+    color: #9381ff;
+}
+.thridColor{
+    color: #b8b8ff;
+}
 
 .ourContainer{
     max-width: 1255px;
@@ -18,4 +28,18 @@
         margin: 0 auto;
     }
 
+}
+
+
+.out-text {
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent; /* Makes the text fill transparent */
+    -webkit-text-stroke: 1px black; /* Adds a black outline */
+    /* text-align: center; */
+}
+
+
+.ox{
+    background-color: red;
 }
